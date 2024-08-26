@@ -195,45 +195,6 @@ span {
 .social-media i {
     font-size: 2rem;
 }
-
-#theme-toggle-icon {
-    font-size: 2rem;
-    color: var(--text-color);
-    cursor: pointer;
-    margin-left: 2rem;
-    transition: color 0.3s;
-}
-
-/* Light mode styles */
-body.light-mode {
-    --bg-color: #ffffff; /* Light background color */
-    --second-bg-color: #f0f0f0; /* Secondary light background color */
-    --text-color: #000000; /* Text color for light mode */
-    --button-bg-color: #dddddd; /* Button background color for light mode */
-    --button-text-color: #000000; /* Button text color for light mode */
-    --main-color: #0ef; /* Accent color remains the same */
-}
-
-body.light-mode .navbar {
-    background-color: var(--second-bg-color);
-}
-
-body.light-mode .navbar a {
-    color: var(--text-color);
-}
-
-body.light-mode .navbar a:hover {
-    color: var(--main-color);
-}
-
-body.light-mode .btn {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-}
-
-body.light-mode #theme-toggle-icon {
-    color: var(--text-color);
-}
 /* about */
 /* General styles for the about section */
 .about {
