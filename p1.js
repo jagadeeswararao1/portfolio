@@ -20,32 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// p1.js
-document.addEventListener("DOMContentLoaded", function () {
-    const themeToggleIcon = document.getElementById("theme-toggle-icon");
-    const body = document.body;
-
-    // Check if the user has a preferred theme stored
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        themeToggleIcon.classList.replace("bx-moon", "bx-sun");
-    }
-
-    themeToggleIcon.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-
-        // Update the icon based on the current mode
-        if (body.classList.contains("dark-mode")) {
-            themeToggleIcon.classList.replace("bx-moon", "bx-sun");
-            localStorage.setItem("theme", "dark");
-        } else {
-            themeToggleIcon.classList.replace("bx-sun", "bx-moon");
-            localStorage.setItem("theme", "light");
-        }
-    });
-});
-
-
 
 function toggleText(button) {
     // Get the next sibling element (the .more-text paragraph)
